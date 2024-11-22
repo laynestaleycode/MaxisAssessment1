@@ -1,4 +1,5 @@
 **MaxisAssessment1 Web Application**
+
 This project is a simple ASP.NET Core MVC web application for managing and displaying contact form submissions. It includes features to submit a contact form, view all submissions, and search for submissions by name.
 
 Technologies Used: ASP.NET Core MVC, Entity Framework Core, Bootstrap (for styling), SQL Server (via Entity Framework for database interactions)
