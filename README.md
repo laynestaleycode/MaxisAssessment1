@@ -33,4 +33,5 @@ Contact/Submissions.cshtml:
 Displays all contact form submissions and provides a search functionality.
 
 Database
+
 A database is used to store all contact form submissions. The ApplicationDbContext class manages interactions with the ContactSubmissions table and posts it onto MaxisAssessmentDb.
