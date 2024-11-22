@@ -1,0 +1,36 @@
+﻿@model MaxisAssessment1.Models.ContactSubmission
+
+@{
+    ViewData["Title"] = "Contact Page";
+}
+
+<h2>Contact Us</h2>
+
+<form asp-action="Submit" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Message">Message</label>
+        <textarea class="form-control" id="Message" name="Message" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="Age">Age (Optional)</label>
+        <input type="number" class="form-control" id="Age" name="Age" />
+    </div>
+
+    <div class="form-group">
+        <label for="ContactNumber">Contact Number (Optional)</label>
+        <input type="text" class="form-control" id="ContactNumber" name="ContactNumber" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

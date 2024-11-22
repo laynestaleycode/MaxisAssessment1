@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MaxisAssessment1.Models.ContactSubmission>
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Submissions Page";
+}
+
+<h1>Hello World</h1>
+
+<form method="get" action="@Url.Action("Submissions", "Contact")" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="searchQuery" class="form-control"
+               placeholder="Search by Name" value="@ViewData["SearchQuery"]" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+<table class="table table-responsive table-hover table-bordered">
+    <thead>
+        <tr class="table-active">
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Age</th>
+            <th>Contact Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var submission in Model)
+        {
+            <tr>
+                <td>@submission.Name</td>
+                <td>@submission.Email</td>
+                <td>@submission.Message</td>
+                <td>@submission.Age</td>
+                <td>@submission.ContactNumber</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
